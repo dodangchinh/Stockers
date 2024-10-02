@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product Id="E102" Name="Tai nghe Sony Xperia Z1" Category="Electronic" Producer="Sony" PriceInput="2050000" PriceOutput="2100000" Warranty="12" ElectricPower="0" />
+  <Product Id="E126" Name="Loa SoundMax A-8900" Category="Electronic" Producer="SoundMax" PriceInput="1750000" PriceOutput="2000000" Warranty="12" ElectricPower="90" />
+  <Product Id="E111" Name="Dien thoai IP 15 Promax" Category="Electronic" Producer="Apple" PriceInput="10000000" PriceOutput="15800000" Warranty="12" />
+</Products>

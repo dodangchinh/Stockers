@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <FontFamily x:Key="FontAwesome">pack://application:,,,/fonts/#FontAwesome</FontFamily>
+
+    <Style TargetType="{x:Type Control}" x:Key="BaseStyle">
+       
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}" />
+   
+    <system:Double x:Key="FontSizeRegular">20</system:Double>
+    <system:Double x:Key="FontSizeAverage">16</system:Double>
+    <system:Double x:Key="FontSizeSmall">12</system:Double>
+    <system:Double x:Key="FontSizeVerySmall">10</system:Double>
+    
+    <system:String x:Key="FontAwesomeArrowleft">&#xf060;</system:String>
+    <system:String x:Key="FontAwesomeArrowRight">&#xf061;</system:String>
+    <system:String x:Key="FontAwesomeChatIcon">&#xf086;</system:String>
+    <system:String x:Key="FontAwesomeUserIcon">&#xf007;</system:String>
+    <system:String x:Key="FontAwesomePictureIcon">&#xf1c5;</system:String>
+    <system:String x:Key="FontAwesomeCogIcon">&#xf013;</system:String>
+    <system:String x:Key="FontAwesomePayBillIcon">&#xf2bb;</system:String>
+    <system:String x:Key="FontAwesomeReportIcon">&#xf15b;</system:String>
+    <system:String x:Key="FontAwesomeExitIcon">&#xf011;</system:String>
+    <system:String x:Key="FontAwesomeAddIcon">&#xf067;</system:String>
+    <system:String x:Key="FontAwesomeMinusIcon">&#xf068;</system:String>
+    <system:String x:Key="FontAwesomeDeleteIcon">&#xf00d;</system:String>
+    <system:String x:Key="FontAwesomeEditIcon">&#xf044;</system:String>
+    <system:String x:Key="FontAwesomeLockIcon">&#xf023;</system:String>
+    <system:String x:Key="FontAwesomeOpenLockIcon">&#xf09c;</system:String>
+    <system:String x:Key="FontAwesomeHomeIcon">&#xf015;</system:String>
+    <system:String x:Key="FontAwesomeLoadingIcon">&#xf110;</system:String>
+    <system:String x:Key="FontAwesomeDetailIcon">&#xf055;</system:String>
+    <system:String x:Key="FontAwesomeExpandIcon">&#xf065;</system:String>
+    <system:String x:Key="FontAwesomeIncreaseQuantityIcon">&#xf0d8;</system:String>
+    <system:String x:Key="FontAwesomePrintIcon">&#xf02f;</system:String>
+    <system:String x:Key="FontAwesomePlus-Square">&#xf0fe;</system:String>
+    <system:String x:Key="FontAwesomePaypal">&#xf1ed;</system:String>
+</ResourceDictionary>

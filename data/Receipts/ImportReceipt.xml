@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportReceipts>
+  <Stocker Id="PNK01" Name="tran Nam" Total="4" ReceiptDate="2024-06-11 09:03:10">
+    <Detail IdProduct="E111" Quantity="2" />
+    <Detail IdProduct="P880" Quantity="2" />
+  </Stocker>
+  <Stocker Id="PNK02" Name="tran Nam" Total="52" ReceiptDate="2024-06-11 09:04:20">
+    <Detail IdProduct="E102" Quantity="2" />
+    <Detail IdProduct="F0012" Quantity="50" />
+  </Stocker>
+  <Stocker Id="PNK03" Name="tran Nam" Total="5" ReceiptDate="2024-06-11 09:15:44">
+    <Detail IdProduct="E111" Quantity="5" />
+  </Stocker>
+  <Stocker Id="PNK04" Name="stocker" Total="30" ReceiptDate="2024-06-11 09:26:37">
+    <Detail IdProduct="F0012" Quantity="30" />
+  </Stocker>
+  <Stocker Id="PNK05" Name="stocker" Total="16" ReceiptDate="2024-06-17 18:08:01">
+    <Detail IdProduct="E102" Quantity="4" />
+    <Detail IdProduct="P880" Quantity="2" />
+    <Detail IdProduct="F0023" Quantity="10" />
+  </Stocker>
+  <Stocker Id="PNK06" Name="stocker" Total="2" ReceiptDate="2024-06-17 18:10:29">
+    <Detail IdProduct="E111" Quantity="2" />
+  </Stocker>
+</ImportReceipts>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product Id="P30" Name="Binh Co Hue" Category="Porcelain" Producer="Hung Phat" PriceInput="500000" PriceOutput="1100000" Material="dat set" />
+  <Product Id="P980" Name="Chen su Tok" Category="Porcelain" Producer="Thanh Hoai" PriceInput="100000" PriceOutput="100000" Material="dat set" />
+  <Product Id="P880" Name="Ly tach tra" Category="Food" Producer="Thanh Hoa" PriceInput="200000" PriceOutput="316000" Material="dat set" />
+</Products>

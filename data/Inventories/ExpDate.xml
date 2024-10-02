@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpDates>
+  <Imports>
+  </Imports>
+  <Exports>
+  </Exports>
+  <Expired>
+    <ExpDateDetail Id="I01" IdProduct="F0012" IdReceipt="PNK02" NameProduct="Banh Trang" Quantity="40" QuantityUsed="10" MfgDate="2024-06-11 00:00:00" ExpDate="2024-06-12 00:00:00" />
+    <ExpDateDetail Id="I02" IdProduct="F0012" IdReceipt="PNK04" NameProduct="Banh Trang" Quantity="10" QuantityUsed="20" MfgDate="2024-06-11 00:00:00" ExpDate="2024-06-18 00:00:00" />
+    <ExpDateDetail Id="I03" IdProduct="F0023" IdReceipt="PNK05" NameProduct="Ca tim Da Lat" Quantity="10" QuantityUsed="0" MfgDate="2024-06-20 00:00:00" ExpDate="2024-06-24 00:00:00" />
+    <ExpDateDetail Id="E01" IdProduct="F0012" IdReceipt="PXK01" NameProduct="Banh Trang" Quantity="10" QuantityUsed="10" MfgDate="2024-06-11 00:00:00" ExpDate="2024-06-18 00:00:00" />
+  </Expired>
+</ExpDates>

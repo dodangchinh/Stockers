@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Customers>
+  <Customer No="1" Name="Tran A" PhoneNumber="099552323" IdCard="123" Address="16 AAA" TotalScore="94.80" Card="Member">
+    <CustomerDetail IdSaleSlip="PBH02" Quantity="10" Total="94800" Score="94.80" CreateAt="17/06/2024 18:20:48" />
+  </Customer>
+  <Customer No="2" Name="guest" PhoneNumber="guest" IdCard="0" Address="guest" TotalScore="16183.15" Card="Member">
+    <CustomerDetail IdSaleSlip="PBH01" Quantity="1" Total="2753150" Score="2753.15" CreateAt="17/06/2024 18:19:54" />
+    <CustomerDetail IdSaleSlip="PBH03" Quantity="1" Total="13430000" Score="13430.00" CreateAt="17/06/2024 18:36:13" />
+  </Customer>
+</Customers>

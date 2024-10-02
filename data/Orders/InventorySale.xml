@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InventorySales>
+  <InventorySale IdProduct="E102" QuantityInvoice="1" PriceOutput="3239000" QuantitySold="1" Remaining="0" />
+  <InventorySale IdProduct="P30" QuantityInvoice="0" PriceOutput="790000" QuantitySold="0" Remaining="0" />
+  <InventorySale IdProduct="F0023" QuantityInvoice="0" PriceOutput="31600" QuantitySold="0" Remaining="0" />
+  <InventorySale IdProduct="E126" QuantityInvoice="0" PriceOutput="2765000" QuantitySold="0" Remaining="0" />
+  <InventorySale IdProduct="P980" QuantityInvoice="0" PriceOutput="158000" QuantitySold="0" Remaining="0" />
+  <InventorySale IdProduct="F0012" QuantityInvoice="10" PriceOutput="12640" QuantitySold="10" Remaining="0" />
+  <InventorySale IdProduct="E111" QuantityInvoice="2" PriceOutput="15800000" QuantitySold="1" Remaining="1" />
+  <InventorySale IdProduct="P880" QuantityInvoice="0" PriceOutput="316000" QuantitySold="0" Remaining="0" />
+</InventorySales>

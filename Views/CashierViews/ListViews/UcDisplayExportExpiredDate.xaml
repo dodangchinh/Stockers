@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Chinh_QuanLyKho.UcDisplayExportExpiredDate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chinh_QuanLyKho"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+    </UserControl.Resources>
+
+    <Border CornerRadius="10" Background="#EFF2F7">
+        <Grid>
+            <StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Expiration Date"
+                             FontSize="20"/>
+                    <DataGrid ItemsSource="{Binding lstExportExpirationDate}"
+                              RowStyle="{DynamicResource DataGridRowStyle1}" 
+                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                              CellStyle="{DynamicResource DataGridCellStyle1}" 
+                              x:Name="dgExportExpirationDates"
+                              Margin="50 10 0 0"
+                              Style="{DynamicResource DataGridStyle1}"
+                              Grid.Row="3"
+                              ScrollViewer.CanContentScroll="True"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Height="200">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Product" 
+                                                Binding="{Binding product.Name}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Quantity" 
+                                                Binding="{Binding Quantity}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Quantity Used" 
+                                                Binding="{Binding QuantityUsed}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Mfg Date" 
+                                                Binding="{Binding MfgDate, StringFormat=dd-MM-yyyy}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Exp Date" 
+                                                Binding="{Binding ExpDates, StringFormat=dd-MM-yyyy}" IsReadOnly="True"  Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Expired Date"
+                             FontSize="20"/>
+                    <DataGrid ItemsSource="{Binding lstExportExpiredDate}"
+                              RowStyle="{DynamicResource DataGridRowStyle1}" 
+                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                              CellStyle="{DynamicResource DataGridCellStyle1}" 
+                              x:Name="dgExportExpiredDates"
+                              Margin="50 10 0 0"
+                              Style="{DynamicResource DataGridStyle1}"
+                              Grid.Row="3"
+                              ScrollViewer.CanContentScroll="True"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Height="200">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Product" 
+                                                Binding="{Binding product.Name}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Quantity" 
+                                                Binding="{Binding Quantity}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Quantity Used" 
+                                                Binding="{Binding QuantityUsed}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Mfg Date" 
+                                                Binding="{Binding MfgDate, StringFormat=dd-MM-yyyy}" IsReadOnly="True"  Width="Auto"/>
+                            <DataGridTextColumn Header="Exp Date" 
+                                                Binding="{Binding ExpDates, StringFormat=dd-MM-yyyy}" IsReadOnly="True"  Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

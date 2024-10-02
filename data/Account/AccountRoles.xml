@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AccountRoles>
+  <AccountRole IdAccount="1" IdRole="R1" />
+  <AccountRole IdAccount="2" IdRole="R2" />
+  <AccountRole IdAccount="4" IdRole="R2" />
+  <AccountRole IdAccount="3" IdRole="R3" />
+  <AccountRole IdAccount="5" IdRole="R2" />
+</AccountRoles>

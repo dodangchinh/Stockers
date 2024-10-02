@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Chinh_QuanLyKho.UcExportInventory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chinh_QuanLyKho"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="600"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="spMain"/>
+                <StackPanel Grid.Column="1" Orientation="Vertical" >
+                    <StackPanel x:Name="spSelected"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Total Pay: "
+                               FontSize="15"
+                               Width="120"/>
+                        <TextBox Name="txtTotalPay"
+                                 IsReadOnly="True"                         
+                                 Style="{StaticResource textBox}"/>
+                    </StackPanel>
+                    <Button Content="Export"
+                            Name="btnExport"
+                            Command="{Binding Path=DataContext.DeleteCommand,RelativeSource={RelativeSource AncestorType={x:Type ListView}}}" 
+                            CommandParameter="{Binding}"
+                            Width="70" Height="50" Margin="30 0 0 0" Padding="0 40 0 40" FontSize="50"
+                            Style="{StaticResource IconButtonHover}"
+                            IsEnabled="False"
+                            Click="btnExport_Click"/>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

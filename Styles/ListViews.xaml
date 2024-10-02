@@ -1,0 +1,74 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Dark_QLNH_090719">
+    <ResourceDictionary.MergedDictionaries>
+        <!-- Is very important-->
+        <ResourceDictionary Source="Colors.xaml"/>
+        <ResourceDictionary Source="Fonts.xaml"/>
+        <ResourceDictionary Source="Texts.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="Item.MouseOver.Background" Color="Gold"/>
+    <SolidColorBrush x:Key="Item.MouseOver.Border" Color="#021B79"/>
+
+    <Style x:Key="listViewItem" TargetType="ListViewItem">
+        <Style.Resources>
+            <LinearGradientBrush x:Key="ListItemHoverFill" EndPoint="0,1" StartPoint="0,0">
+                <GradientStop Color="#021B79" Offset="0"/>
+                <GradientStop Color="#021B79" Offset="1"/>
+            </LinearGradientBrush>
+        </Style.Resources>
+
+        <Setter Property="Padding" Value="5,0,5,0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="AllowDrop" Value="False"/>
+
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="{StaticResource ForegroundLightBrush}" />
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#ECECEC" Offset="0.0" />
+                            <GradientStop Color="#ECECEC" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource Item.MouseOver.Background}" />
+                <Setter Property="BorderBrush" Value="{StaticResource Item.MouseOver.Border}"/>
+            </Trigger>
+
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsSelected" Value="True" />
+                    <Condition Property="ItemsControl.IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="BorderThickness" Value="1" />
+                    <Setter Property="Foreground" Value="{StaticResource WordBlueBrush}"/>
+                    <Setter Property="Background" Value="{StaticResource Item.MouseOver.Background}" />
+                    <Setter Property="BorderBrush" Value="{StaticResource Item.MouseOver.Border}"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="GridViewColumnHeader">
+        <Setter Property="Padding" Value="5,0,5,0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSmall}"/>
+        <Setter Property="Background" Value="#F5F5F5"/>
+        <Setter Property="Foreground" Value="#333333"/>
+    </Style>
+</ResourceDictionary>

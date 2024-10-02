@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExportReceipts>
+  <Stocker Id="PXK01" Name="stocker" Total="23" ReceiptDate="2024-06-11 09:29:30">
+    <Detail IdProduct="F0012" Quantity="20" />
+    <Detail IdProduct="E102" Quantity="1" />
+    <Detail IdProduct="E111" Quantity="2" />
+  </Stocker>
+</ExportReceipts>

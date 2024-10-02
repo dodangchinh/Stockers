@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Accounts>
+  <Account Id="1" Name="Admin" Username="admin" Password="admin" />
+  <Account Id="2" Name="Stocker" Username="stocker" Password="stocker" />
+  <Account Id="3" Name="Cashier" Username="cashier" Password="cashier" />
+  <Account Id="4" Name="Chinh" Username="123" Password="123" />
+  <Account Id="5" Name="Tran Nam" Username="darktran" Password="123" />
+</Accounts>

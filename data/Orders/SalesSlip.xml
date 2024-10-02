@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SalesSlips>
+  <SalesSlip Id="PBH01" UserName="cashier" Customer="guest" PhoneNumber="guest" IdCard="0" Address="guest" Quantity="1" Total="2753150" Discount="2000" TotalPay="2751150" CreateAt="17/06/2024 18:19:54">
+    <SalesSlipDetail IdProduct="E102" Name="Tai nghe Sony Xperia Z1" Category="Electronic" PriceInput="2050000" PriceOutput="3239000" Quantity="1" Discount="485850" />
+  </SalesSlip>
+  <SalesSlip Id="PBH02" UserName="cashier" Customer="Tran A" PhoneNumber="099552323" IdCard="123" Address="16 AAA" Quantity="10" Total="94800" Discount="0" TotalPay="94800" CreateAt="17/06/2024 18:20:48">
+    <SalesSlipDetail IdProduct="F0012" Name="Banh Trang" Category="Food" PriceInput="8000" PriceOutput="12640" Quantity="10" Discount="31600" />
+  </SalesSlip>
+  <SalesSlip Id="PBH03" UserName="cashier" Customer="guest" PhoneNumber="guest" IdCard="0" Address="guest" Quantity="1" Total="13430000" Discount="0" TotalPay="13430000" CreateAt="17/06/2024 18:36:13">
+    <SalesSlipDetail IdProduct="E111" Name="Dien thoai IP 15 Promax" Category="Electronic" PriceInput="10000000" PriceOutput="15800000" Quantity="1" Discount="2370000" />
+  </SalesSlip>
+</SalesSlips>

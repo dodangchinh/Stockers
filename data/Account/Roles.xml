@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roles>
+  <Role Id="R1" Name="MANAGER" />
+  <Role Id="R2" Name="STOCKER" />
+  <Role Id="R3" Name="CASHIER" />
+</Roles>

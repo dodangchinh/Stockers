@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="Chinh_QuanLyKho.UcDisplayCustomer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chinh_QuanLyKho" xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+        <!--Install: Install-Package FontAwesome.WPF-->
+        <Style x:Key="IconButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="Transparent">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:FontAwesome Icon="Edit" />
+                                <ContentPresenter />
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Border CornerRadius="10" Background="#EFF2F7">
+        <StackPanel>
+            
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Members Data Grid-->
+                <DataGrid ItemsSource="{Binding lstCustomer}"
+                          SelectedItem="{Binding customerSelected}"
+                          RowStyle="{DynamicResource DataGridRowStyle1}" 
+                          ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                          CellStyle="{DynamicResource DataGridCellStyle1}" 
+                          x:Name="dgCustomers"
+                          Style="{DynamicResource DataGridStyle1}"
+                          Grid.Row="3">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" 
+                                            Binding="{Binding Name}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTextColumn Header="Phone Number" 
+                                            Binding="{Binding PhoneNumber}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTextColumn Header="Address" 
+                                            Binding="{Binding Address}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTextColumn Header="Total Score" 
+                                            Binding="{Binding TotalScore, StringFormat=N2}" IsReadOnly="True"  Width="Auto"/>
+
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <Button Command="{Binding Path=DataContext.ActiveCommand,RelativeSource={RelativeSource AncestorType={x:Type ListView}}}" 
+                                            CommandParameter="{Binding}" Width="28" FontSize="25"
+                                            Style="{StaticResource IconButtonLock}" 
+                                            Content="{StaticResource FontAwesomeDetailIcon}"
+                                            ToolTip="Detail"
+                                            Name="btnDetail"
+                                            Click="btnDetail_Click"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+            <StackPanel HorizontalAlignment="Center">
+                <Button Content="{StaticResource FontAwesomeHomeIcon}"
+                        Command="{Binding Path=DataContext.DeleteCommand,RelativeSource={RelativeSource AncestorType={x:Type ListView}}}" 
+                        CommandParameter="{Binding}"
+                        Width="50" Padding="0 40 0 40" FontSize="200"
+                        Style="{StaticResource IconButtonLock}"
+                        Click="btnHome_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Border>
+</UserControl>

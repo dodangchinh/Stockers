@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Inventory>
+  <ImportInventorys>
+    <ImportInventory IdProduct="E102" Previous="2" AmountPre="4100000" Recent="4" AmountRecent="8200000" ReceiptDate="2024-06-17 18:08:15" Quantity="6" Total="12300000" />
+    <ImportInventory IdProduct="P30" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" ReceiptDate="2024-06-11 08:39:47" Quantity="0" Total="0" />
+    <ImportInventory IdProduct="F0023" Previous="0" AmountPre="0" Recent="10" AmountRecent="200000" ReceiptDate="2024-06-17 18:08:37" Quantity="10" Total="200000" />
+    <ImportInventory IdProduct="E126" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" ReceiptDate="2024-06-04 09:44:40" Quantity="0" Total="0" />
+    <ImportInventory IdProduct="P980" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" ReceiptDate="2023-12-10 10:30:00" Quantity="0" Total="0" />
+    <ImportInventory IdProduct="F0012" Previous="50" AmountPre="400000" Recent="30" AmountRecent="240000" ReceiptDate="2024-06-11 09:26:44" Quantity="80" Total="640000" />
+    <ImportInventory IdProduct="E111" Previous="7" AmountPre="70000000" Recent="2" AmountRecent="20000000" ReceiptDate="2024-06-17 18:10:35" Quantity="9" Total="90000000" />
+    <ImportInventory IdProduct="P880" Previous="2" AmountPre="400000" Recent="2" AmountRecent="400000" ReceiptDate="2024-06-17 18:08:24" Quantity="4" Total="800000" />
+  </ImportInventorys>
+  <ExportInventorys>
+    <ExportInventory IdProduct="E102" Previous="0" AmountPre="0" Recent="1" AmountRecent="2050000" InvoiceDate="2024-06-11 09:30:14" Quantity="1" Total="2050000" />
+    <ExportInventory IdProduct="P30" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" InvoiceDate="13/12/2023 16:00:00" Quantity="0" Total="0" />
+    <ExportInventory IdProduct="F0023" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" InvoiceDate="05/03/2024 16:40:18" Quantity="0" Total="0" />
+    <ExportInventory IdProduct="E126" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" InvoiceDate="04/06/2024 09:55:58" Quantity="0" Total="0" />
+    <ExportInventory IdProduct="P980" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" InvoiceDate="22/02/2024 20:23:29" Quantity="0" Total="0" />
+    <ExportInventory IdProduct="F0012" Previous="0" AmountPre="0" Recent="20" AmountRecent="160000" InvoiceDate="2024-06-11 09:29:57" Quantity="20" Total="160000" />
+    <ExportInventory IdProduct="E111" Previous="0" AmountPre="0" Recent="2" AmountRecent="20000000" InvoiceDate="2024-06-11 09:30:21" Quantity="2" Total="20000000" />
+    <ExportInventory IdProduct="P880" Previous="0" AmountPre="0" Recent="0" AmountRecent="0" InvoiceDate="2024-06-11 09:24:59" Quantity="0" Total="0" />
+  </ExportInventorys>
+  <RemainingProducts>
+    <RemainingProduct IdProduct="E102" Quantity="5" QuantityExpDate="0" QuantityRemain="5" />
+    <RemainingProduct IdProduct="P30" Quantity="0" QuantityExpDate="0" QuantityRemain="0" />
+    <RemainingProduct IdProduct="F0023" Quantity="0" QuantityExpDate="10" QuantityRemain="0" />
+    <RemainingProduct IdProduct="E126" Quantity="0" QuantityExpDate="0" QuantityRemain="0" />
+    <RemainingProduct IdProduct="P980" Quantity="0" QuantityExpDate="0" QuantityRemain="0" />
+    <RemainingProduct IdProduct="F0012" Quantity="50" QuantityExpDate="60" QuantityRemain="0" />
+    <RemainingProduct IdProduct="E111" Quantity="7" QuantityExpDate="0" QuantityRemain="7" />
+    <RemainingProduct IdProduct="P880" Quantity="4" QuantityExpDate="0" QuantityRemain="4" />
+  </RemainingProducts>
+</Inventory>

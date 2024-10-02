@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Chinh_QuanLyKho.UcSelectedInventorySales"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chinh_QuanLyKho"
+             mc:Ignorable="d" Loaded="Window_Loaded">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+    </UserControl.Resources>
+
+    <Border CornerRadius="10" Background="#EFF2F7">
+        <StackPanel Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Members Data Grid-->
+                <DataGrid ItemsSource="{Binding lstInventorySale}"
+                          SelectedItem="{Binding inventorySalesSelected}"
+                          RowStyle="{DynamicResource DataGridRowStyle1}" 
+                          ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                          CellStyle="{DynamicResource DataGridCellStyle1}" 
+                          x:Name="dgProducts"
+                          Style="{DynamicResource DataGridStyle1}"
+                          Grid.Row="3"
+                          ScrollViewer.CanContentScroll="True"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Width="600" Height="400" RowHeight="30" FontSize="12" >
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" 
+                                            Binding="{Binding product.Name}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTextColumn Header="Price Output" 
+                                            Binding="{Binding product.PriceOutput}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTextColumn Header="Remaining" 
+                                            Binding="{Binding Remaining}" IsReadOnly="True"  Width="Auto"/>
+                        <DataGridTemplateColumn Width="Auto">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Command="{Binding Path=DataContext.LockCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                            CommandParameter="{Binding}"
+                                            Width="25" Height="25" FontSize="25"
+                                            Style="{StaticResource IconButtonDelete}"
+                                            Content="{StaticResource FontAwesomePlus-Square}"
+                                            FontFamily="{StaticResource FontAwesome}"
+                                            ToolTip="Add item"
+                                            Name="btnAdd"
+                                            Click="btnAdd_Click"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </Border>
+</UserControl>

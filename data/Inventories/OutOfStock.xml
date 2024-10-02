@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OutOfStocks>
+  <OutOfStock IdProduct="P30" NameProduct="Binh Co Hue" Remaining="0" />
+  <OutOfStock IdProduct="F0023" NameProduct="Ca tim Da Lat" Remaining="0" />
+  <OutOfStock IdProduct="E126" NameProduct="Loa SoundMax A-8900" Remaining="0" />
+  <OutOfStock IdProduct="P980" NameProduct="Chen su Tok" Remaining="0" />
+  <OutOfStock IdProduct="E111" NameProduct="Dien thoai IP 15 Promax" Remaining="1" />
+  <OutOfStock IdProduct="P880" NameProduct="Ly tach tra" Remaining="0" />
+  <OutOfStock IdProduct="E102" NameProduct="Tai nghe Sony Xperia Z1" Remaining="0" />
+</OutOfStocks>

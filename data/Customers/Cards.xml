@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cards>
+  <Card Id="123" Customer="Tran A" Score="94.80" Card="Member" CreateAt="05/03/2024 16:41:29" />
+  <Card Id="0" Customer="guest" Score="16183.15" Card="Platinum" CreateAt="17/06/2024 18:36:13" />
+</Cards>

@@ -1,0 +1,105 @@
+﻿<Window x:Class="Chinh_QuanLyKho.frmAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chinh_QuanLyKho"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="780" Width="1280"
+        WindowStartupLocation="CenterScreen" 
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter" />
+    </Window.Resources>
+
+    <Border CornerRadius="10" 
+            Padding="10" 
+            Background="#F7F6F4"
+            MouseDown="Border_MouseDown" 
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Menu-->
+            <Border Grid.RowSpan="3" 
+                    CornerRadius="10"
+                    Name="borderMenu">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#FB7154" Offset="0"/>
+                        <GradientStop Color="#FB6161" Offset="0.8"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel Name="spBtnMenu">
+                    <!--Logo-->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30 0 10">
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Border Width="50" Height="50" CornerRadius="10" Margin="5 0 20 0">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Color="#FB7456" Offset="0"/>
+                                        <GradientStop Color="#FA5654" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+
+                                <Image Source="/Images/u4.png" 
+                                       Width="40" Height="40"/>
+                            </Border>
+
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Name="txtNameAccount"
+                                           Text="Hello, " 
+                                           Style="{StaticResource titleText}" 
+                                           FontSize="18" FontWeight="Bold"/>
+                                <TextBlock Text="Have A Nice Day" 
+                                           Foreground="#FFFFFF" 
+                                           Margin="0 3 0 0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!--Menu Items-->
+                    <TextBlock Text="Main" Style="{StaticResource menuTitle}"/>
+
+                    <Button Style="{StaticResource menuButton}"
+                            Click="btnAccount_Click"
+                            Name="btnAccount">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Accounts" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource menuButton}"
+                            Click="btnRole_Click"
+                            Name="btnRole">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Roles" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource menuButton}"
+                            Click="btnProduct_Click"
+                            Name="btnProduct">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Products" Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+            </Border>
+            <!--Main-->
+            <StackPanel Name="spMain"
+                        Grid.Column="1" 
+                        Grid.Row="1" 
+                        Margin="10 5 5 0">
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

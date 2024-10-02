@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product Id="F0023" Name="Ca tim Da Lat" Category="Food" Producer="Viet Food" PriceInput="20000" PriceOutput="50000" />
+  <Product Id="F0012" Name="Banh Trang" Category="Food" Producer="Huu Tien" PriceInput="8000" PriceOutput="11680" />
+</Products>

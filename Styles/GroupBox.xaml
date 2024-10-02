@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Dark_QLNH_090719">
+    <Style TargetType="GroupBox" x:Key="groupBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="GroupBox">
+                    <Grid Margin="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" 
+                                BorderBrush="Navy" 
+                                BorderThickness="1,2,1,0">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Color="#344e86" Offset="0.0" />
+                                    <GradientStop Color="#344e86" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter Margin="4" 
+                                              ContentSource="Header" 
+                                              RecognizesAccessKey="True" />
+                        </Border>
+                        <Border Grid.Row="1" 
+                                BorderBrush="Navy" BorderThickness="1,0,1,4" >
+                            <ContentPresenter Margin="4" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="GroupBox" x:Key="groupBoxOther">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="GroupBox">
+                    <Grid Margin="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" 
+                                BorderBrush="{StaticResource WordOrangeBrush}" 
+                                BorderThickness="1,2,1,0">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Color="{StaticResource WordOrange}" Offset="0.0" />
+                                    <GradientStop Color="{StaticResource WordOrange}" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter Margin="4" 
+                                              ContentSource="Header" 
+                                              RecognizesAccessKey="True" />
+                        </Border>
+                        <Border Grid.Row="1" 
+                                BorderBrush="{StaticResource WordOrangeBrush}" BorderThickness="1,0,1,4" >
+                            <ContentPresenter Margin="4" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
